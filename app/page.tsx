@@ -103,9 +103,9 @@ export default function FakeNewsFeed() {
   }, [loadMore])
 
   return (
-    <div className="fake-news-app min-h-screen bg-[#FAFAF8]">
+    <div className="fake-news-app min-h-screen bg-[#E5E7E2]">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-[#FAFAF8]/95 backdrop-blur-sm border-b border-[#E8E8E4]">
+      <header className="sticky top-0 z-50 bg-[#E5E7E2]/95 backdrop-blur-sm border-b border-[#D4D6D1]">
         <div className="max-w-2xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div>
@@ -140,7 +140,7 @@ export default function FakeNewsFeed() {
           </div>
         )}
 
-        <div className="space-y-8">
+        <div className="space-y-10">
           {headlines.map((headline) => (
             <Link key={headline.id} href={`/article/${headline.id}`}>
               <FakeNewsCard
