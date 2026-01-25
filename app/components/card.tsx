@@ -13,7 +13,7 @@ export function FakeNewsCard({ headline, imageUrl }: FakeNewsCardProps) {
   const [imageError, setImageError] = useState(false)
 
   return (
-    <article className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 overflow-hidden cursor-pointer">
+    <article className="bg-white rounded-2xl shadow-lg hover:shadow-xl border border-[#E0E0E0] transition-all duration-300 hover:-translate-y-1 overflow-hidden cursor-pointer">
       {/* Image */}
       <div className="relative aspect-video bg-[#F0F0EC] overflow-hidden">
         {!imageLoaded && !imageError && (
