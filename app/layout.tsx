@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Lora, Source_Sans_3 } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import "./globals.css"
 
 const lora = Lora({
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en" className={`${lora.variable} ${sourceSans.variable}`}>
       <body className="min-h-screen bg-[#FAFAF8]">
         {children}
+        <Analytics />
       </body>
     </html>
   )
